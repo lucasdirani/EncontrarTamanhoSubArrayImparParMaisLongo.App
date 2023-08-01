@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>EncontrarTamanhoSubArrayImparParMaisLongo.App.Performance.TestePerformanceAlgoritmoTamanhoSubArrayImparParMaisLongo-20230725-080613</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.5, OS=Windows 10 (10.0.19045.3208/22H2/2022Update)
+Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK=7.0.203
+  [Host]     : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>                                                                            Method</th><th>Array</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Rank</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>MedirPerformanceEncontrarTamanhoSubArrayImparParMaisLongoEmComplexidadeQuadraticaDeTempo</td><td>Int32[100]</td><td>380.24 ns</td><td>7.525 ns</td><td>8.666 ns</td><td>6</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarTamanhoSubArrayImparParMaisLongoEmComplexidadeLinearDeTempo</td><td>Int32[100]</td><td>214.49 ns</td><td>4.307 ns</td><td>7.196 ns</td><td>5</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarTamanhoSubArrayImparParMaisLongoEmComplexidadeQuadraticaDeTempo</td><td>Int32[10]</td><td>40.20 ns</td><td>0.520 ns</td><td>0.434 ns</td><td>2</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarTamanhoSubArrayImparParMaisLongoEmComplexidadeLinearDeTempo</td><td>Int32[10]</td><td>20.80 ns</td><td>0.413 ns</td><td>0.345 ns</td><td>1</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarTamanhoSubArrayImparParMaisLongoEmComplexidadeQuadraticaDeTempo</td><td>Int32[200]</td><td>750.02 ns</td><td>14.840 ns</td><td>17.090 ns</td><td>8</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarTamanhoSubArrayImparParMaisLongoEmComplexidadeLinearDeTempo</td><td>Int32[200]</td><td>438.82 ns</td><td>8.813 ns</td><td>9.796 ns</td><td>7</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarTamanhoSubArrayImparParMaisLongoEmComplexidadeQuadraticaDeTempo</td><td>Int32[50]</td><td>195.11 ns</td><td>2.758 ns</td><td>2.579 ns</td><td>4</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarTamanhoSubArrayImparParMaisLongoEmComplexidadeLinearDeTempo</td><td>Int32[50]</td><td>105.74 ns</td><td>1.574 ns</td><td>1.314 ns</td><td>3</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>
